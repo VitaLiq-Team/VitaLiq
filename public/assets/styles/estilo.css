@@ -1,0 +1,296 @@
+/* === estilo.css === */
+/* ===== HOW IT WORKS ===== */
+#how-it-works {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f9fafb;
+}
+
+#how-it-works h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+#how-it-works .subtitle {
+    font-size: 1rem;
+    color: #64748b;
+    margin-bottom: 50px;
+}
+
+/* Container */
+.steps-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Each step card */
+.step-card {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+
+.step-card img {
+    width: 80px;
+    height: auto;
+    margin: 15px 0;
+}
+
+.step-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-bottom: 5px;
+}
+
+.step-card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.step-card p {
+    font-size: 0.9rem;
+    color: #475569;
+    text-align: center;
+    max-width: 200px;
+}
+
+/* Colors */
+.step-card.blue {
+    background-color: #1d4ed8;
+    color: white;
+}
+.step-card.blue h3,
+.step-card.blue h4,
+.step-card.blue p {
+    color: white;
+}
+
+.step-card.gray {
+    background-color: #e5e7eb;
+}
+
+/* Hover effect */
+.step-card:hover {
+    transform: scale(1.05);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fc;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+/* ===== Section ===== */
+#services {
+    padding: 60px 20px;
+}
+
+#services h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* ====== Services container ===== */
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ====== Card style ===== */
+.service-card {
+    background: #fff;
+    border-radius: 25px;
+    padding: 35px 25px;
+    width: 300px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.service-card img {
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+/* ====== Card titles ===== */
+.service-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* ====== Button ===== */
+.btn {
+    background-color: #dbeafe;
+    color: #1e3a8a;
+    font-weight: 600;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+/* ====== Hover (JS complement) ===== */
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+/* ===== Colores individuales para cada bloque ===== */
+
+/* Card 1: Azul intenso */
+.service-card:nth-child(1) {
+    background-color: #007bff; /* azul */
+    color: white;
+}
+.service-card:nth-child(1) h3,
+.service-card:nth-child(1) p {
+    color: white;
+}
+.service-card:nth-child(1) .btn {
+    background-color: white;
+    color: #007bff;
+}
+.service-card:nth-child(1) .btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Card 2: Gris claro */
+.service-card:nth-child(2) {
+    background-color: #e5e7eb; /* gris claro */
+    color: #111827;
+}
+.service-card:nth-child(2) .btn {
+    background-color: #cbd5e1;
+    color: #1e3a8a;
+}
+.service-card:nth-child(2) .btn:hover {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+/* Card 3: Azul brillante */
+.service-card:nth-child(3) {
+    background-color: #1d4ed8; /* azul fuerte */
+    color: white;
+}
+.service-card:nth-child(3) h3,
+.service-card:nth-child(3) p {
+    color: white;
+}
+.service-card:nth-child(3) .btn {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+.service-card:nth-child(3) .btn:hover {
+    background-color: white;
+    color: #1d4ed8;
+}
+.proof-trust {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9fb;
+    color: #2b2b2b;
+}
+
+.proof-trust h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.proof-trust .subtitle {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-bottom: 40px;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 280px;
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.stars {
+    color: #fbbf24; /* color de las estrellas (amarillo) */
+    margin-bottom: 10px;
+}
+
+.review-text {
+    font-size: 0.9rem;
+    color: #4b5563;
+    margin-bottom: 15px;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reviewer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.reviewer span {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #111827;
+}
