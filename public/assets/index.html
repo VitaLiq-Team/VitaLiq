@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITALIQ - Your doctor, your way</title>
+    <link rel="stylesheet" href="./styles/estilo.css">
+</head>
+<body>
+<header class="header">
+    <div class="container header-container">
+        <!-- Logo de VITALIQ  -->
+        <!-- Logo de VITALIQ  -->
+        <div class="logo-header">
+            <a href="#home">
+                <img src="images/about-us-logo.png" alt="VITALIQ Logo" class="header-logo-img" />
+                <span class="header-logo-text">VITALIQ</span>
+            </a>
+        </div>
+
+        <!-- Menú de navegación -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#premium">Premium</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Botón de Sign In (derecha) -->
+        <button class="btn-signin">Sign In →</button>
+    </div>
+</header>
+
+<!-- SECCIÓN PRINCIPAL (HERO) -->
+<section class="hero-section">
+    <!-- Esta imagen  q cubre toda la sección como fondo -->
+    <div class="hero-bg"></div>
+
+    <!-- Contenido superpuesto sobre la imagen -->
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h1>Your doctor,<br>your way</h1>
+            <p>Personalized medical guidance, built to match your lifestyle and needs</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Try it now</button>
+                <button class="btn-secondary">Learn More</button>
+            </div>
+        </div>
+
+        <!-- Formulario de Crear Cuenta -->
+        <div class="signup-form">
+            <h2>Create an Account</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" placeholder="Full Name *" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address *</label>
+                    <input type="email" id="email" placeholder="example@gmail.com" required />
+                </div>
+                <button type="submit" class="btn-continue">Continue</button>
+            </form>
+
+            <div class="social-login">
+                <p>Already have an account?</p>
+                <!-- iconos de Google, Apple, Facebook -->
+                <button class="social-btn google">
+                    <!-- images/google-icon.png -->
+                    <img src="images/google-icon.png" alt="Google" /> Sign in with Google
+                </button>
+                <button class="social-btn apple">
+                    <!-- mages/apple-icon.png -->
+                    <img src="images/apple-icon.png" alt="Apple" /> Sign in with Apple
+                </button>
+                <button class="social-btn facebook">
+                    <!--images/facebook-icon.png -->
+                    <img src="images/facebook-icon.png" alt="Facebook" /> Sign in with Facebook
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flecha hacia abajo (scroll) -->
+    <div class="scroll-down">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#3498db" stroke-width="2">
+            <path d="M12 5l7 7-7 7M12 5v14" />
+        </svg>
+    </div>
+</section>
+
+<!-- SECCIÓN "ABOUT US"  -->
+<section class="about-section">
+    <div class="container about-content">
+        <!-- Logo de About Us (izquierda) -->
+        <!--  images/about-us-logo.png -->
+        <div class="about-logo">
+            <img src="images/about-us-logo.png" alt="About Us Logo" />
+            <h2>About Us</h2>
+            <p>Your health, smarter and safer.</p>
+        </div>
+
+        <!-- Texto de About Us (dentro del círculo azul) -->
+        <div class="about-text">
+            <p>We are a team focused on the comfort, accessibility, and, above all, the health of our users. We compromise to use the technology in a good way to support the social well-being.</p>
+        </div>
+    </div>
+</section>
+<!--servicios-->
+<section id="services">
+    <h2>Our Featured Services, Built for You</h2>
+    <div class="services-container">
+        <!-- Card 1 -->
+        <div class="service-card">
+            <img src="images/cus_doc.png" alt="Consultation Icon" class="service-icon">
+            <h3>Customize yor doctor</h3>
+            <p>Design a doctor that understands you-appearance, style, and personality--your health, your way</p>
+            <button class="btn">Start</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card">
+            <img src="images/chat_doc.png" alt="Doctor Chat Icon" class="service-icon">
+            <h3>Doctor chat</h3>
+            <p>Get instant health guidance through an AI-powered medical chat-anytime, anywhere</p>
+            <button class="btn">Start</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card">
+            <img src="images/pill_snap.png" alt="GP Scan Icon" class="service-icon">
+            <h3>Pill Snap</h3>
+            <p>Snap or upload a photo of your medication to unlock full details: dosage, side effects and more</p>
+            <button class="btn">Start</button>
+        </div>
+    </div>
+</section>
+<section class="proof-trust">
+    <h2>Proof & Trust</h2>
+    <p class="subtitle">
+        Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
+    </p>
+
+    <div id="reviews-container" class="reviews">
+        <!-- Las tarjetas se insertarán desde main.js -->
+    </div>
+</section>
+<!-- ===== PREMIUM PLAN SECTION ===== -->
+<section id="premium-plan">
+    <h2>Premium Plan</h2>
+    <p class="subtitle">Go beyond. Go Premium</p>
+
+    <div class="plans-container">
+        <!-- FREE PLAN -->
+        <div class="plan-card free">
+            <h3>FREE</h3>
+            <p class="price">$ <span>0</span> <small>Per Month</small></p>
+            <ul class="features">
+                <li>✅ AI-powered health chat</li>
+                <li>✅ Scan medications to see side effects</li>
+                <li>✅ General health tips and advice</li>
+                <li>✅ Create your personal doctor</li>
+                <li>🚫 No detailed reports or history tracking</li>
+                <li>🚫 Limited to 1 device</li>
+            </ul>
+            <button class="btn">Try for free</button>
+        </div>
+
+        <!-- PREMIUM PLAN -->
+        <div class="plan-card premium">
+            <h3>PREMIUM</h3>
+            <p class="price">9.99 <span>$</span> <small>Per Month</small></p>
+            <ul class="features">
+                <li>✅ Unlimited AI health chat & consultations</li>
+                <li>✅ Advanced medication scans with side effects & interactions</li>
+                <li>✅ Full doctor customization (appearance, specialty, personality)</li>
+                <li>✅ Downloadable medical summaries & reports</li>
+                <li>✅ Priority updates with latest medical data</li>
+                <li>✅ 24/7 priority support</li>
+            </ul>
+            <button class="btn">Try for free</button>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT / QUESTIONS SECTION ===== -->
+<section id="contact">
+    <h2>Got Questions?</h2>
+    <p>Write us with confidence. We will respond as soon as we see your message.</p>
+    <form id="contact-form">
+        <input type="text" placeholder="Write here..." required>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>Made With Love By Pebru All Rights Reserved</p>
+    <div class="footer-links">
+        <div>
+            <h4>Get In Touch</h4>
+            <p>The quick fox jumps over the lazy dog</p>
+            <div class="social">
+                <img src="images/facebook.png" alt="Facebook icon">
+                <img src="images/twitter.png" alt="Twitter icon">
+                <img src="images/instagram.png" alt="Instagram icon">
+            </div>
+        </div>
+
+        <div>
+            <h4>Company Info</h4>
+            <ul>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>We are hiring</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Features</h4>
+            <ul>
+                <li>Business Marketing</li>
+                <li>User Analytics</li>
+                <li>Live Chat</li>
+                <li>Unlimited Support</li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Resources</h4>
+            <ul>
+                <li>iOS & Android</li>
+                <li>Watch a Demo</li>
+                <li>Customers</li>
+                <li>API</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- Enlazando tu archivo main.js -->
+<script src="scripts/main.js"></script>
+</body>
+</html>
