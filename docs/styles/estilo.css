@@ -900,3 +900,215 @@ footer p {
 .social img:hover {
     transform: scale(1.1);
 }
+/* === PAGES FOR SERVICES === */
+.service-page {
+    padding: 80px 0;
+    background: #f5f8ff;
+}
+
+.service-box {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+.service-box h2 {
+    font-size: 32px;
+    color: #0a2342;
+}
+
+.service-box p {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Customize doctor */
+.service-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.service-large-img {
+    width: 300px;
+}
+
+.service-form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.service-form input,
+.service-form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* Doctor Chat */
+.chat-box {
+    background: #e8eef7;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.chat-window {
+    background: white;
+    height: 250px;
+    border-radius: 15px;
+    padding: 15px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.chat-input {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+/* Pill Snap */
+.pill-snap-box {
+    text-align: center;
+}
+
+.upload-btn {
+    margin-top: 20px;
+    background: #0ea5ff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+.service-interface {
+    width: 100%;
+    padding: 70px 0;
+    text-align: center;
+    background: #ffffff;
+}
+
+.service-interface.hidden {
+    display: none;
+}
+
+.service-img {
+    width: 140px;
+    margin-bottom: 20px;
+}
+
+.range-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.range-box input {
+    width: 200px;
+}
+
+.chat-box {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.chat {
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.chat.doctor {
+    background: #d4eefb;
+    margin-right: auto;
+}
+
+.chat.user {
+    background: #c3ffd1;
+    margin-left: auto;
+}
+
+.chat-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin: 15px auto;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.audio-btn img {
+    width: 28px;
+}
+
+.continue-btn {
+    padding: 12px 35px;
+    border-radius: 10px;
+    border: none;
+    background: #3498db;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.upload-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px;
+    margin: auto;
+}
+/* ---- YOUTUBE VIDEO STYLE ---- */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+    margin: 40px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 30px rgba(0,0,0,0.15);
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 480px;
+    border: none;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #0a2342;
+    margin-top: 60px;
+}

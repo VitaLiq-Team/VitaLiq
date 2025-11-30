@@ -109,6 +109,15 @@
             <p>We are a team focused on the comfort, accessibility, and, above all, the health of our users. We compromise to use the technology in a good way to support the social well-being.</p>
         </div>
     </div>
+    <!-- ABOUT US -->
+    <div class="video-container">
+        <!-- 🔵 PEGA AQUÍ TU LINK DE YOUTUBE DEL EQUIPO VITALIQ -->
+        <iframe
+                src="https://www.youtube.com/embed/4r4IJu7UHtg"
+                allowfullscreen>
+        </iframe>
+    </div>
+
 </section>
 <!--servicios-->
 <section id="services">
@@ -119,7 +128,8 @@
             <img src="images/cus_doc.png" alt="Consultation Icon" class="service-icon">
             <h3>Customize yor doctor</h3>
             <p>Design a doctor that understands you-appearance, style, and personality--your health, your way</p>
-            <button class="btn">Start</button>
+            <button class="btn" onclick="location.href='#customize-doctor'">Start</button>
+
         </div>
 
         <!-- Card 2 -->
@@ -127,7 +137,8 @@
             <img src="images/chat_doc.png" alt="Doctor Chat Icon" class="service-icon">
             <h3>Doctor chat</h3>
             <p>Get instant health guidance through an AI-powered medical chat-anytime, anywhere</p>
-            <button class="btn">Start</button>
+            <button class="btn" onclick="location.href='#doctor-chat'">Start</button>
+
         </div>
 
         <!-- Card 3 -->
@@ -135,9 +146,20 @@
             <img src="images/pill_snap.png" alt="GP Scan Icon" class="service-icon">
             <h3>Pill Snap</h3>
             <p>Snap or upload a photo of your medication to unlock full details: dosage, side effects and more</p>
-            <button class="btn">Start</button>
+            <button class="btn" onclick="location.href='#pill-snap'">Start</button>
+
         </div>
     </div>
+    <!-- ABOUT THE PRODUCT -->
+    <h1 class="section-title">About the Product</h1>
+    <div class="video-container">
+        <!-- 🔵 PEGA AQUÍ TU LINK DEL VIDEO “ABOUT THE PRODUCT” -->
+        <iframe
+                src="https://www.youtube.com/embed/qEn9134nmEc"
+                allowfullscreen>
+        </iframe>
+    </div>
+
 </section>
 <section class="proof-trust">
     <h2>Proof & Trust</h2>
@@ -196,6 +218,73 @@
         <button type="submit">Send</button>
     </form>
 </section>
+
+<section id="customize-doctor" class="service-interface hidden">
+    <img src="images/cus_doc.png" class="service-img">
+
+    <h2>Customize Your Doctor</h2>
+    <p>Design a doctor that understands you — appearance, style, and personality.</p>
+
+    <label>Age</label>
+    <div class="range-box">
+        <input type="range" min="20" max="80" value="40" id="ageRange">
+        <span id="ageValue">40</span>
+    </div>
+
+    <label>Gender</label>
+    <select>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+    </select>
+
+    <label>Style</label>
+    <select>
+        <option>Friendly</option>
+        <option>Professional</option>
+        <option>Strict</option>
+    </select>
+
+    <button class="continue-btn">Continue</button>
+</section>
+
+
+<!-- DOCTOR CHAT -->
+<section id="doctor-chat" class="service-interface hidden">
+    <img src="images/chat_doc.png" class="service-img">
+
+    <h2>Doctor Chat</h2>
+    <p>Instant medical guidance through AI chat — anytime, anywhere.</p>
+
+    <div class="chat-box">
+        <div class="chat doctor">Hello! How can I assist you today?</div>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" placeholder="Write your message...">
+        <button class="audio-btn">
+            <img src="images/audio.png" alt="audio icon">
+        </button>
+        <button class="send-btn">Send</button>
+    </div>
+</section>
+
+
+<!-- ================== PILL SNAP ================== -->
+<section id="pill-snap" class="service-interface hidden">
+    <img src="images/pill_snap.png" class="service-img">
+
+    <h2>Pill Snap</h2>
+    <p>Take or upload a photo to view full medication details.</p>
+
+    <div class="upload-box">
+        <input type="file" id="pillUpload" accept="image/*">
+        <button class="btn">Scan</button>
+    </div>
+
+    <p class="desc-small">We’ll analyze the pill and give you dosage, interactions, and risks.</p>
+</section>
+
 
 <!-- ===== FOOTER ===== -->
 <footer>
