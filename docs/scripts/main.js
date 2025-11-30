@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
-    // Manejo del formulario de registro
+    /* ================= FORMULARIO SIGNUP ================= */
     const signupForm = document.getElementById('signupForm');
     if (signupForm) {
-        signupForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // Evitar recarga de página
+        signupForm.addEventListener('submit', function (e) {
+            e.preventDefault();
 
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
@@ -14,18 +14,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            // Aquí se puede agregar lógica de envío real (AJAX, etc.)
             alert(`Account creation started for:\nName: ${name}\nEmail: ${email}`);
-
-            // Limpiar formulario después del envío
             signupForm.reset();
         });
     }
 
-    // Scroll suave al hacer clic en la flecha
+    /* ================= SCROLL DOWN ================= */
     const scrollDown = document.querySelector('.scroll-down');
     if (scrollDown) {
-        scrollDown.addEventListener('click', function() {
+        scrollDown.addEventListener('click', function () {
             window.scrollTo({
                 top: window.innerHeight,
                 behavior: 'smooth'
@@ -33,9 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Scroll suave para enlaces de navegación
+    /* ================= NAV MENU SCROLL SUAVE ================= */
     document.querySelectorAll('.nav-menu a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
@@ -48,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Animación de las tarjetas de servicio
+    /* ================= ANIMACIONES DE SERVICIOS ================= */
     const services = document.querySelectorAll(".service-card");
     services.forEach(service => {
         service.addEventListener("mouseenter", () => {
@@ -61,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Sección de reseñas
+    /* ================= RESEÑAS ================= */
     const reviews = [
         {
             rating: 4,
@@ -104,6 +101,31 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-}); // ← ESTA es la única llave de cierre principal
+    /* ================= SWITCH A LAS INTERFACES ================= */
+    document.querySelectorAll(".service-card .btn").forEach((btn, index) => {
+        btn.addEventListener("click", () => {
 
+            document.querySelectorAll(".service-interface")
+                .forEach(s => s.classList.add("hidden"));
 
+            const ids = ["customize-doctor", "doctor-chat", "pill-snap"];
+            const target = document.getElementById(ids[index]);
+
+            if (target) {
+                target.classList.remove("hidden");
+                target.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    });
+
+    /* ================= RANGO DE EDAD DINÁMICO ================= */
+    const age = document.getElementById("ageRange");
+    const ageValue = document.getElementById("ageValue");
+
+    if (age) {
+        age.addEventListener("input", () => {
+            ageValue.textContent = age.value;
+        });
+    }
+
+}); // FIN DEL DOMContentLoaded
